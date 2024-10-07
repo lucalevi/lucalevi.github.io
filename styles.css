@@ -1,0 +1,325 @@
+:root {
+    --dark-black: #1a1a1a;
+    --dark-red: #4a0e0e;
+    --medium-red: #8b0000;
+    --vermilion: #e34234;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--dark-black);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: var(--dark-red);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: var(--vermilion) 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: var(--vermilion);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--vermilion);
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+header a:active {
+    color: var(--medium-red);
+}
+
+#showcase {
+    position: relative;
+    min-height: 400px;
+    background: url('../img/pizpalu.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#showcase .container {
+    position: relative;
+    z-index: 1;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
+}
+
+#showcase p {
+    font-size: 20px;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); */
+}
+
+#who-am-i {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--dark-red);
+}
+
+#who-am-i h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#contact {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--medium-red);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-method {
+    text-align: center;
+}
+
+.contact-method img {
+    width: 50px;
+    height: 50px;
+}
+
+#projects {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--dark-red);
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background: var(--medium-red);
+    border-radius: 5px;
+}
+
+#books {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--medium-red);
+    text-align: center;
+}
+
+#books h2 {
+    margin-bottom: 20px;
+}
+
+#gallery {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--dark-red);
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+#quote {
+    padding: 30px;
+    color: #ffffff;
+    background: var(--vermilion);
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    padding: 20px;
+    color: #ffffff;
+    background: var(--dark-black);
+    text-align: center;
+}
+
+/* General link styles */
+a {
+    color: var(--vermilion);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ff6347;
+    text-shadow: 0 0 2px rgba(227, 66, 52, 0.3);
+}
+
+a:active {
+    color: var(--medium-red);
+}
+
+a:visited {
+    color: #c13228;
+}
+
+/* Specific styles for links in darker sections */
+#who-am-i a,
+#projects a,
+#gallery a,
+#books a {
+    color: #ffa07a;
+}
+
+#who-am-i a:hover,
+#projects a:hover,
+#gallery a:hover,
+#books a:hover {
+    color: #ffb6c1;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+#who-am-i a:active,
+#projects a:active,
+#gallery a:active,
+#books a:active {
+    color: var(--vermilion);
+}
+
+#who-am-i a:visited,
+#projects a:visited,
+#gallery a:visited,
+#books a:visited {
+    color: #deb887;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+    }
+
+    .contact-method {
+        margin-bottom: 20px;
+    }
+}
