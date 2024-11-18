@@ -115,6 +115,17 @@ header a:active {
     /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); */
 }
 
+#welcome {
+    padding: 15px;
+    color: #ffffff;
+    background: var(--medium-red);
+}
+
+#welcome h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #who-am-i {
     padding: 15px;
     color: #ffffff;
