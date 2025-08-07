@@ -102,6 +102,13 @@ li {
     margin-bottom: 20px;
 }
 
+.thesis-cover {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 /* Tools Grid */
 .tool-grid,
 .os-grid {
