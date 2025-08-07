@@ -4,162 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luca Iacolettig - Home</title>
+    <title>Home - Luca Levi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Luca</span> Iacolettig - Home</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#showcase">Home</a></li>
-                    <li><a href="#welcome">Welcome</a></li>
-                    <li><a href="#who-am-i">Who Am I?</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="tools.html">Tools & OS</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome to My Home Page!</h1>
-            <p>Find More About Me...</p>
-        </div>
-    </section>
-
-    <section id="welcome">
-        <div class="container">
-            <p>Read my CV by clicking the link below</p>
-            <a href="files/cv-en.pdf" target="_blank">
-                <h2>English CV of mine</h2>
-            </a>
-
-        </div>
-    </section>
-
-    <section id="who-am-i">
-        <div class="container">
-            <h2>Who Am I?</h2>
-            <div class="photo-gallery">
-                <div class="photo-item" style="background-image: url('../img/profile/socialsq.jpg');"></div>
-            </div>
-            <p>I am a polyhedric guy interested in GIS as well as LaTeX typography.
-                In the last couple of years I approached computer programming using
-                Python and R, which I used to model
-                <a href="https://github.com/lucalevi/Avalanche-release-extended" target="_blank">avalanche hazard</a>.
-                Apart from this, I also read interesting books on
-                <a href="https://en.wikipedia.org/wiki/Thinking%2C_Fast_and_Slow" target="_blank">Economics</a>,
-                <a href="https://ia801708.us.archive.org/32/items/the-occult-technology-of-power-bookmarked/The%20Occult%20Technology%20of%20Power%20-%20bookmarked.pdf"
-                    target="_blank">power</a>, and
-                <a href="https://en.wikipedia.org/wiki/Book_of_Genesis" target="_blank">the origin of everything</a>.
+    <main>
+        <section id="profile">
+            <img src="images/profile.jpg" alt="Luca Levi" class="profile-pic">
+            <h1>Welcome to My World</h1>
+            <p>Hi, I’m Luca—a polyhedric person, mediocre writer, and coder.
+                I explore life’s big questions through
+                philosophy, craft tools with code, and chase goodness over evil.
+                Dive into my books, projects, and more!
             </p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-methods">
-                <div class="contact-method">
-                    <a href="https://www.linkedin.com/in/luca-iacolettig/" target="_blank">
-                        <img src="../img/icons/linkedin.png" alt="LinkedIn">
-                        <p>LinkedIn Profile</p>
-                    </a>
-                </div>
+        </section>
+        <h1>Gallery</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/slide1.jpg" alt="Slide 1">
             </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>My Best Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>
-                        <a href="https://github.com/lucalevi/Avalanche-release-extended" target="_blank">
-                            Potential Release Areas
-                        </a>
-                    </h3>
-                    <p>Automated identification of potential avalanche release
-                        areas using R. Useful for avalanche
-                        forecasters and researchers.</p>
-                </div>
-                <div class="project-item">
-                    <h3>
-                        <a href="https://github.com/lucalevi/NDVI-calculation" target="_blank">
-                            API algorithm statistics
-                        </a>
-                    </h3>
-                    <p>Downloads a GeoTIF image from Sentinel Hub and calculates
-                        the average
-                        <a href="https://gisgeography.com/ndvi-normalized-difference-vegetation-index/" target="_blank">
-                            NDVI</a> on a certain area,
-                        which is provided by a polygon within the script.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>
-                        <a href="https://github.com/lucalevi/network-availability" target="_blank">
-                            GIS network availability (with Python)
-                        </a>
-                    </h3>
-                    <p>This software outputs statistics about the availability
-                        (being free from construction sites) of a certain
-                        network for planning purposes.
-                    </p>
-                </div>
+            <div class="mySlides">
+                <img src="images/slide2.jpg" alt="Slide 2">
             </div>
+            <!-- Add slides up to slide20.jpg -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </section>
-
-    <section id="books">
-        <div class="container"></div>
-        <h2>A Book of Mine</h2>
-        <h3>"Everything I don't know"</h3>
-        <h5>Italian: <a href="files/booklet.pdf" target="_blank">"Tutto quello che non so..."</a></h5>
-        <h3>Author: Lukas</h3>
-        <p>A book about everything and the ignorance of everything.</p>
-        <p>How I came to realise that goodness is better than evil.</p>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <div class="container">
-            <h2>Some Photos...</h2>
-            <div class="image-gallery">
-                <div class="gallery-item" style="background-image: url('../img/gallery/helvetia.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/swiss.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/acis.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/bernina.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/shang.gif');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/prag.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/sun.jpg');"></div>
-                <div class="gallery-item" style="background-image: url('../img/gallery/kloster.jpg');"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="quote">
-        <div class="container">
-            <p>"Yesterday is past. Tomorrow is not. Now is all there is. Do good!"</p>
-            <p>- Anonymous</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Luca Iacolettig's Personal Site.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
